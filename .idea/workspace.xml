@@ -4,7 +4,7 @@
     <list default="true" id="f1358fb9-df3c-4921-8c98-8edeafa885c6" name="Default" comment="" />
     <ignored path="UnderPoint.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366899249929" ignored="false" />
+    <file path="/index.html" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366899592366" ignored="false" />
     <file path="/underpoint.jquery.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366898481903" ignored="false" />
     <file path="/style.css" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366894206270" ignored="false" />
     <file path="/randomElements.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366897007883" ignored="false" />
@@ -27,30 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="21" selection-start="862" selection-end="862" vertical-scroll-proportion="-19.875">
+            <state line="39" column="40" selection-start="928" selection-end="928" vertical-scroll-proportion="0.7008547">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="underpoint.jquery.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugin/underpoint.jquery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="10" selection-start="0" selection-end="4178" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="underpoint.jquery.min.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="underpoint.jquery.min.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugin/underpoint.jquery.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="447" selection-start="954" selection-end="954" vertical-scroll-proportion="0.021037867">
+            <state line="1" column="447" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -68,9 +57,9 @@
       <list>
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/test/randomElements.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/plugin/underpoint.jquery.js" />
         <option value="$PROJECT_DIR$/plugin/underpoint.jquery.min.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -308,9 +297,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/plugin/underpoint.jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="21" selection-start="862" selection-end="862" vertical-scroll-proportion="-19.875">
+        <state line="1" column="447" selection-start="954" selection-end="954" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -324,9 +313,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/underpoint.jquery.min.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="447" selection-start="954" selection-end="954" vertical-scroll-proportion="0.021037867">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="40" selection-start="928" selection-end="928" vertical-scroll-proportion="0.7008547">
           <folding />
         </state>
       </provider>

@@ -35,9 +35,9 @@
         $("#wrapper").underpoint({
             selector: "*",
             depth: 0, // <=0 is unlimited depth
-            trigger: "mousemove",
+            trigger: "click",
             callback: function($elements, event) {
-                console.log($elements);
+                alert($elements.length);
             }
         });
 
