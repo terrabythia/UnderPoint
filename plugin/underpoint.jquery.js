@@ -87,9 +87,6 @@
             if (this.options.includeSelf)
                 $list.add($(this.element));
 
-            if (this.options.includeSelf)
-                $list.add($(this.element));
-
             this.options.callback($list, event);
         },
 
