@@ -23,8 +23,8 @@
     var pluginName = "underpoint",
         defaults = {
             trigger: "click", // can be all events that contain the pageX and pageY property (mousemove, mouseover, mouseout etc)
-            selector: "*", // * == all children
-            depth: 0,
+            selector: "*", // (div, a, etc.) "*" = all children
+            depth: 0, 
             includeSelf: false,
             callback: function($elements, event){}
         };
@@ -84,6 +84,9 @@
                 return (clickX >= range.x[0] && clickX <= range.x[1]) && (clickY >= range.y[0] && clickY <= range.y[1])
             });
 
+
+            if (this.options.includeSelf)
+                $list.add($(this.element));
 
             this.options.callback($list, event);
         },
