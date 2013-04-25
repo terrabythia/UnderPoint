@@ -25,7 +25,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
 <script src="test/randomElements.js"></script>
-<script src="plugin/underpoint.jquery.min.js"></script>
+<script src="plugin/underpoint.jquery.js"></script>
 <script>
 
     // Note: for testing purposes the elements in the wrapper are dynamicly added after dom load
@@ -35,10 +35,9 @@
         $("#wrapper").underpoint({
             selector: "*",
             depth: 0, // <=0 is unlimited depth
-            trigger: "click",
-            includeSelf: true,
+            trigger: "mousemove",
             callback: function($elements, event) {
-                alert($elements.length);
+                console.log($elements);
             }
         });
 

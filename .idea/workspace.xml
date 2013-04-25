@@ -4,7 +4,7 @@
     <list default="true" id="f1358fb9-df3c-4921-8c98-8edeafa885c6" name="Default" comment="" />
     <ignored path="UnderPoint.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366899007212" ignored="false" />
+    <file path="/index.html" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366899249929" ignored="false" />
     <file path="/underpoint.jquery.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366898481903" ignored="false" />
     <file path="/style.css" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366894206270" ignored="false" />
     <file path="/randomElements.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366897007883" ignored="false" />
@@ -30,28 +30,28 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="8" selection-start="548" selection-end="548" vertical-scroll-proportion="-14.041667">
+            <state line="38" column="21" selection-start="862" selection-end="862" vertical-scroll-proportion="-19.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="randomElements.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/randomElements.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="underpoint.jquery.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="underpoint.jquery.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugin/underpoint.jquery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="0" selection-start="3430" selection-end="3430" vertical-scroll-proportion="0.23553719">
+            <state line="86" column="10" selection-start="0" selection-end="4178" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="underpoint.jquery.min.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugin/underpoint.jquery.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="447" selection-start="954" selection-end="954" vertical-scroll-proportion="0.021037867">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,9 +68,9 @@
       <list>
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/test/randomElements.js" />
-        <option value="$PROJECT_DIR$/plugin/underpoint.jquery.min.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/plugin/underpoint.jquery.js" />
+        <option value="$PROJECT_DIR$/plugin/underpoint.jquery.min.js" />
       </list>
     </option>
   </component>
@@ -301,33 +301,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/underpoint.jquery.min.js">
+    <entry file="file://$PROJECT_DIR$/test/randomElements.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="496" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.02097902">
+        <state line="3" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.042075735">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="8" selection-start="548" selection-end="548" vertical-scroll-proportion="-14.041667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/randomElements.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+        <state line="38" column="21" selection-start="862" selection-end="862" vertical-scroll-proportion="-19.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin/underpoint.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="0" selection-start="3430" selection-end="3430" vertical-scroll-proportion="0.23553719">
+        <state line="86" column="10" selection-start="0" selection-end="4178" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/underpoint.jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="447" selection-start="954" selection-end="954" vertical-scroll-proportion="0.021037867">
+          <folding />
         </state>
       </provider>
     </entry>
