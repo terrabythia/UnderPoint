@@ -84,6 +84,8 @@
                 return (clickX >= range.x[0] && clickX <= range.x[1]) && (clickY >= range.y[0] && clickY <= range.y[1])
             });
 
+            if (this.options.includeSelf)
+                $list.add($(this.element));
 
             if (this.options.includeSelf)
                 $list.add($(this.element));

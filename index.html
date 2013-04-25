@@ -36,6 +36,7 @@
             selector: "*",
             depth: 0, // <=0 is unlimited depth
             trigger: "click",
+            includeSelf: true,
             callback: function($elements, event) {
                 alert($elements.length);
             }
