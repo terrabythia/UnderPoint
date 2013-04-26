@@ -19,7 +19,8 @@
     ],
     "licenses": [
         {
-            "type": "MIT"
+            "type": "MIT",
+            "url": "https://github.com/SanderSoulwax/UnderPoint/blob/master/licence.txt"
         }
     ],
     "docs": "https://github.com/SanderSoulwax/UnderPoint",
