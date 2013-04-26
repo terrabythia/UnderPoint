@@ -1,0 +1,25 @@
+{
+    "name": "underpoint",
+    "title": "jQuery UnderPoint",
+    "description": "jQuery plugin for getting all the elements under the current mousepoint.",
+    "keywords": [
+        "mousepoint",
+        "under",
+        "point"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Sander Bruggeman"
+    },
+    "maintainers": [
+        {
+            "name": "Sander Bruggeman",
+            "email": "sanderbruggeman@gmail.com"
+        }
+    ],
+    "docs": "https://github.com/SanderSoulwax/UnderPoint",
+    "download": "https://github.com/SanderSoulwax/UnderPoint",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
