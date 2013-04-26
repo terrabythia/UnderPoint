@@ -17,6 +17,11 @@
             "email": "sanderbruggeman@gmail.com"
         }
     ],
+    "licenses": [
+        {
+            "type": "MIT"
+        }
+    ],
     "docs": "https://github.com/SanderSoulwax/UnderPoint",
     "download": "https://github.com/SanderSoulwax/UnderPoint",
     "dependencies": {
