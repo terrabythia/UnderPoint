@@ -4,10 +4,22 @@
     <list default="true" id="f1358fb9-df3c-4921-8c98-8edeafa885c6" name="Default" comment="" />
     <ignored path="UnderPoint.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366899592366" ignored="false" />
-    <file path="/underpoint.jquery.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366898481903" ignored="false" />
+    <file path="/index.html" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366971507577" ignored="false" />
+    <file path="/underpoint.jquery.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366900534150" ignored="false" />
     <file path="/style.css" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366894206270" ignored="false" />
-    <file path="/randomElements.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366897007883" ignored="false" />
+    <file path="/randomElements.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366899700022" ignored="false" />
+    <file path="$PROJECT_DIR$/../VAMP/js/Lib/Controllers/TimelineController.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366901812946" ignored="false" />
+    <file path="/TimelineController.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366901523350" ignored="false" />
+    <file path="/a.dummy" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366964501912" ignored="false" />
+    <file path="$PROJECT_DIR$/../VAMP/js/mainv2.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366969354635" ignored="false" />
+    <file path="$PROJECT_DIR$/../VAMP/js/Lib/Controllers/CanvasController.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366901560254" ignored="false" />
+    <file path="$PROJECT_DIR$/../VAMP/css/stylev2.css" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366963732589" ignored="false" />
+    <file path="$PROJECT_DIR$/../VAMP/editorv2.php" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366969346006" ignored="false" />
+    <file path="/editorv2.php" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366968915561" ignored="false" />
+    <file path="/mainv2.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366966980751" ignored="false" />
+    <file path="/ObjectToEasel.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366964525380" ignored="false" />
+    <file path="$PROJECT_DIR$/../VAMP/js/Lib/Classes/ObjectToEasel.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366964525380" ignored="false" />
+    <file path="$PROJECT_DIR$/../VAMP/.htaccess" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366968708991" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +42,28 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="40" selection-start="928" selection-end="928" vertical-scroll-proportion="0.7008547">
+            <state line="39" column="23" selection-start="911" selection-end="911" vertical-scroll-proportion="0.7222222">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="randomElements.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/randomElements.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="11" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="underpoint.jquery.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugin/underpoint.jquery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="12" selection-start="2444" selection-end="2444" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,9 +88,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/plugin/underpoint.jquery.min.js" />
         <option value="$PROJECT_DIR$/test/randomElements.js" />
         <option value="$PROJECT_DIR$/plugin/underpoint.jquery.js" />
-        <option value="$PROJECT_DIR$/plugin/underpoint.jquery.min.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -290,9 +322,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/randomElements.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.042075735">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -306,23 +338,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin/underpoint.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="10" selection-start="0" selection-end="4178" vertical-scroll-proportion="0.0">
+        <state line="60" column="12" selection-start="2444" selection-end="2444" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/test/randomElements.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="26" column="11" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="40" selection-start="928" selection-end="928" vertical-scroll-proportion="0.7008547">
+        <state line="39" column="23" selection-start="911" selection-end="911" vertical-scroll-proportion="0.7222222">
           <folding />
         </state>
       </provider>
