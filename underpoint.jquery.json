@@ -7,7 +7,7 @@
         "under",
         "point"
     ],
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": {
         "name": "Sander Bruggeman"
     },
@@ -24,6 +24,7 @@
         }
     ],
     "docs": "https://github.com/SanderSoulwax/UnderPoint",
+    "homepage": "https://github.com/SanderSoulwax/UnderPoint",
     "download": "https://github.com/SanderSoulwax/UnderPoint",
     "dependencies": {
         "jquery": ">=1.7"

@@ -20,6 +20,7 @@
     <file path="/ObjectToEasel.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366964525380" ignored="false" />
     <file path="$PROJECT_DIR$/../VAMP/js/Lib/Classes/ObjectToEasel.js" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366964525380" ignored="false" />
     <file path="$PROJECT_DIR$/../VAMP/.htaccess" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366968708991" ignored="false" />
+    <file path="/underpoint.jquery.json" changelist="f1358fb9-df3c-4921-8c98-8edeafa885c6" time="1366972362264" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
       <file leaf-file-name="underpoint.jquery.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/underpoint.jquery.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="21" selection-start="258" selection-end="258" vertical-scroll-proportion="0.1923077">
+            <state line="26" column="62" selection-start="738" selection-end="738" vertical-scroll-proportion="0.5555556">
               <folding />
             </state>
           </provider>
@@ -371,7 +372,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/underpoint.jquery.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="258" selection-end="258" vertical-scroll-proportion="0.1923077">
+        <state line="26" column="62" selection-start="738" selection-end="738" vertical-scroll-proportion="0.5555556">
           <folding />
         </state>
       </provider>
