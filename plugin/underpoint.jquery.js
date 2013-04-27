@@ -2,44 +2,31 @@
  *  Project: UnderPoint jQuery Plugin
  *  Description: Returns a jQuery Object that contains all the objects under the current mousepoint
  *  Author: Sander Bruggeman
- *  License: Attribution 3.0 Unported (http://creativecommons.org/licenses/by/3.0/)
+ *  License: MIT (https://github.com/SanderSoulwax/UnderPoint/blob/master/licence.txt)
  *
  */
 
-// the semi-colon before function invocation is a safety net against concatenated
-// scripts and/or other plugins which may not be closed properly.
 ;(function ( $, window, document, undefined ) {
 
-    // undefined is used here as the undefined global variable in ECMAScript 3 is
-    // mutable (ie. it can be changed by someone else). undefined isn't really being
-    // passed in so we can ensure the value of it is truly undefined. In ES5, undefined
-    // can no longer be modified.
-
-    // window and document are passed through as local variable rather than global
-    // as this (slightly) quickens the resolution process and can be more efficiently
-    // minified (especially when both are regularly referenced in your plugin).
-
-    // Create the defaults once
     var pluginName = "underpoint",
         defaults = {
-            trigger: "click", // can be all events that contain the pageX and pageY property (mousemove, mouseover, mouseout etc)
+            trigger:[ "click"], // can be all events that contain the pageX and pageY property (mousemove, mouseover, mouseout etc)
             selector: "*", // (div, a, etc.) "*" = all children
             depth: 0, 
             callback: function($elements, event){}
         };
 
-    // The actual plugin constructor
     function Plugin( element, options ) {
         this.element = element;
 
-        // jQuery has an extend method which merges the contents of two or
-        // more objects, storing the result in the first object. The first object
-        // is generally empty as we don't want to alter the default options for
-        // future instances of the plugin
         this.options = $.extend( {}, defaults, options );
+        if((typeof this.options.trigger) === 'string' ) {
+            this.options.trigger = [ this.options.trigger ];
+        }
 
         this._defaults = defaults;
         this._name = pluginName;
+        this._mousePos = {x:0,y:0};
 
         this.init();
     }
@@ -47,31 +34,46 @@
     Plugin.prototype = {
 
         init: function() {
-            // Place initialization logic here
-            // You already have access to the DOM element and
-            // the options via the instance, e.g. this.element
-            // and this.options
-            // you can add more functions like the one below and
-            // call them like so: this.yourOtherFunction(this.element, this.options).
 
             this.proxied = {
-                didTrigger: jQuery.proxy(this.didTrigger, this)
+                didTrigger: jQuery.proxy(this._didTrigger, this),
+                mouseMove: jQuery.proxy(this._mouseMoveForManualTrigger, this)
             };
 
-            $(this.element).on(this.options.trigger, this.proxied.didTrigger);
+            this.publicFunctions = {
+                mousePoint: jQuery.proxy(this.elementsUnderMousePoint, this),
+                point: jQuery.proxy(this.elementsUnderPoint, this)
+            };
+
+            var i = this.options.trigger.length-1,
+                trigger;
+            for (;i >= 0; i--) {
+                trigger = this.options.trigger[i];
+
+                if (trigger !== "manual")
+                    $(this.element).on(trigger, this.proxied.didTrigger);
+                else
+                    $(this.element).on('mousemove', this.proxied.mouseMove)
+            }
 
         },
 
-        didTrigger: function(event) {
+        _mouseMoveForManualTrigger: function(event) {
+            this._mousePos = {x:event.pageX,y:event.pageY};
+        },
 
-            var clickX = event.pageX
-                ,clickY = event.pageY
-                ,$list
+        _didTrigger: function(event) {
+            this.options.callback(this._elementsUnderPoint(event.pageX,event.pageY), event);
+        },
+
+        _elementsUnderPoint: function(x,y) {
+
+             var $list
                 ,$elements
                 ,offset
                 ,range;
 
-            $elements = this.findAtDepth($(this.element), this.options.selector, this.options.depth);
+            $elements = this._findAtDepth($(this.element), this.options.selector, this.options.depth);
             $list = $elements.filter(function() {
                 offset = $(this).offset();
                 range = {
@@ -80,13 +82,13 @@
                     y: [ offset.top,
                         offset.top + $(this).outerHeight() ]
                 };
-                return (clickX >= range.x[0] && clickX <= range.x[1]) && (clickY >= range.y[0] && clickY <= range.y[1])
+                return (x >= range.x[0] && x <= range.x[1]) && (y >= range.y[0] && y <= range.y[1])
             });
 
-            this.options.callback($list, event);
+            return $list;
         },
 
-        findAtDepth: function (element, selector, maxDepth) {
+        _findAtDepth: function (element, selector, maxDepth) {
             var depths = [], i;
 
             if (maxDepth > 0) {
@@ -99,17 +101,37 @@
 
             return element.find(selector);
 
+        },
+
+        elementsUnderMousePoint: function() {
+            return this._elementsUnderPoint(this._mousePos.x,this._mousePos.y);
+        },
+
+        elementsUnderPoint: function(point) {
+            if((typeof point)==="undefined" || (typeof point.x)==="undefined" || (typeof point.y)==="undefined")
+                return false;
+
+            return this._elementsUnderPoint(point.x,point.y);
         }
     };
 
-    // A really lightweight plugin wrapper around the constructor,
-    // preventing against multiple instantiations
-    $.fn[pluginName] = function ( options ) {
-        return this.each(function () {
-            if (!$.data(this, "plugin_" + pluginName)) {
-                $.data(this, "plugin_" + pluginName, new Plugin( this, options ));
+    $.fn[pluginName] = function ( options, param ) {
+        if ((typeof options) === "string" && this.length >= 1 && $.data(this[0], "plugin_" + pluginName)) {
+            var element = this[0];
+            var func = $.data(element, "plugin_" + pluginName).publicFunctions[options];
+            if ((typeof func) !== "undefined") {
+                // getters
+                return func(param);
             }
-        });
+        }
+        else {
+            return this.each(function () {
+                if (!$.data(this, "plugin_" + pluginName)) {
+                    $.data(this, "plugin_" + pluginName, new Plugin( this, options ));
+                }
+            });
+        }
+        return false;
     };
 
 })( jQuery, window, document );

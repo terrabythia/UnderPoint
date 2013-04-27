@@ -31,15 +31,30 @@
     // Note: for testing purposes the elements in the wrapper are dynamicly added after dom load
     $(function(){
 
-        // This is how you use it!
-        $("#wrapper").underpoint({
+        var $wrapper = $("#wrapper");
+        $wrapper.underpoint({
             selector: "*",
             depth: 0, // <=0 is unlimited depth
-            trigger: "click",
+            trigger: ["dblclick","manual"], // Manual is needed when you want to get the elements under mousepoint at any given moment
             callback: function($elements, event) {
                 alert($elements.length);
             }
         });
+
+        // Get the elements at a specific point any time you want
+        // Important: is not dependent on adding "manual" to the trigger array but is always available
+        // So you shouldn't if you're not planning on using the "mousePoint" option
+        var $elements = $wrapper.underpoint("point", { x: 300, y: 300 });
+        alert("under point 300, 300: " + $elements.length);
+
+        $(document).on("keyup", function(event){
+            // 38 = up key
+            if (event.keyCode == 38) {
+                var $elements = $wrapper.underpoint("mousePoint");
+                alert("under mousepoint: " + $elements.length);
+            }
+        });
+
 
     });
 </script>

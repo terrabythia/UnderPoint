@@ -21,11 +21,6 @@ function _getRandomElement() {
         left: Math.random() * ($document.width()- 150)
     });
 
-    $element.animate({
-        top: Math.random() * ($document.height() - 150),
-        left: Math.random() * ($document.width()- 150)
-    }, 8000);
-
     return $element;
 }
 
